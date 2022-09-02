@@ -1,0 +1,59 @@
+h2{margin: 0;font-size: 24px;font-weight: 300;}
+h3{margin: 5px 0;font-size: 16px;font-weight: 100;}
+body{margin: 0;padding: 0;font-family: 'Roboto', sans-serif;color: #333}
+* {box-sizing: border-box;margin: 0;}
+a{color: #000;text-decoration: none;}
+
+/* ::-webkit-scrollbar {width: 5px;} */
+::-webkit-scrollbar-track {background: #fff;}
+::-webkit-scrollbar-thumb {background: #eee;}
+::-webkit-scrollbar-thumb:hover {background: #ddd;}
+.border-bottom{padding: 10px;border-bottom: 1px solid #ddd;width: -webkit-fill-available;overflow: hidden;}
+.header{height: 50px;box-shadow: 0 2px 4px #ddd;position: fixed;background: #fff;width: -webkit-fill-available;z-index: 50;}
+.header-sub{border-bottom: 2px solid #ddd;background: #f9f9f9;}
+.logo{height: -webkit-fill-available;height: 50px;text-align: center;}
+.logo img{align-self: center;padding: 10px;height: 100%}
+.sidebar{float: left;background: #fff;height: -webkit-fill-available;left: 0;position: fixed;top: 0;width: 398px;overflow-x: hidden;box-shadow: 2px 0px 4px #ddd;z-index: 60}
+.search-container {float: right;display: flex;justify-content: center;height: 50px;width: 500px}
+.container_custom{float: left;margin: 55px 0 0 0;margin-left: 400px;background: #fff;height: -webkit-fill-available;left: 0;top: 0;overflow-x: hidden;width: -webkit-fill-available}
+.menu{float: left;margin-left: 400px;display: flex;justify-content: center;height: 50px;}
+.menuitems{align-self: center;}
+.menuitems a{text-decoration: none;padding: 5px 10px;color: #666;}
+.titletext{float: left;}
+.titlebutton{float: right;display: flex;justify-content: center;height: 55px;}
+.titlebutton a{align-self: center;width: 100%;}
+.button{display: block;background: #eee;padding: 10px 20px;text-decoration: none;font-size: 16px;font-weight: 500;color: #000;border-radius: 4px;}
+.allapps{overflow: hidden;margin: 0 auto;}
+.app{box-shadow: 0 1px 1px 0 rgb(255 255 255 / 14%), 0 2px 1px -1px rgb(255 255 255 / 12%), 0 1px 3px 0 rgb(93 93 93 / 20%);width: 280px;float: left;height: 320px;margin: 5px;}
+.appicon{width: 100%;height: 250px;overflow: hidden;}
+.appicon img{width: 100%;padding: 5px;}
+.app:hover{transition: .5s;box-shadow: 0 1px 1px 0 rgb(255 255 255 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%), 0 1px 4px 0 rgb(0 0 0 / 20%);}
+.appdesc{padding: 0 10px;}
+.appdesc h3{font-size: 18px;}
+.appdesc p{margin: 0;font-size: 14px;color: #666;}
+.profile{display: flex;height: 80px;}
+.profileimg{padding: 7.5px;float: left;}
+.profileimg img{border-radius: 50%;height: 60px;width: 60px;}
+.profileinfo{align-self: center;width: -webkit-fill-available;overflow: hidden;}
+.profileinfo h3{margin: 0;font-size: 18px;font-weight: bold;}
+.profileinfo p{margin: 0;}
+.sidemenu{padding:  10px;border-bottom: 1px solid #ddd;}
+.sidemenubutton a{display: block;background: #eee;padding: 10px;text-decoration: none;font-size: 16px;font-weight: 500;color: #000;margin: 5px 0px;border-left: 5px solid;}
+.sidemenubutton .active {
+    background: #ddd;
+}
+.topbanner{overflow: hidden;display: flex;align-items: center;text-align: center;height: 350px;background: rgb(2,0,36);background: linear-gradient(309deg, rgba(2,0,36,1) 0%, rgba(236,236,236,1) 0%, rgba(255,255,255,1) 100%);border-bottom: 2px solid #ddd;}
+.topbanner-left p{padding: 20px;text-align: justify;}
+.topbanner-left a{padding: 10px 20px;background: #eee; border:none;text-decoration: none;color: #000}
+.topbanner-left{float: left;padding: 20px;width: 50%;}
+.topbanner-right img{width: 100%}
+.topbanner-right{float: right;width: 50%;}
+.contact-form input,textarea{display: block;padding: 10px;outline: 0;border:1px solid #ddd;width: 100%;margin: 5px 0;}
+.hire-card {box-shadow: 0 1px 1px 0 rgb(255 255 255 / 14%), 0 2px 1px -1px rgb(255 255 255 / 12%), 0 1px 3px 0 rgb(93 93 93 / 20%);margin: auto;font-family: arial;padding: 10px}
+.hire-card button {border: none;outline: 0;padding: 12px;color: white;background-color: #000;text-align: center;cursor: pointer;width: 100%;font-size: 18px;}
+.hire-card h1{padding:20px 0;}
+.hire-card button:hover {opacity: 0.7;}
+.mobile-app{overflow: hidden;width: 250px;padding: 50px;text-align: center;box-shadow: 0 1px 1px 0 rgb(255 255 255 / 14%), 0 2px 1px -1px rgb(255 255 255 / 12%), 0 1px 3px 0 rgb(93 93 93 / 20%);margin: 5px}
+.mobile-app:hover{transition: .5s;box-shadow: 0 1px 1px 0 rgb(255 255 255 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%), 0 1px 4px 0 rgb(0 0 0 / 20%);}
+.mobile-app-logo {height: 100px;width: 100px;margin: 0 auto;}
+.mobile-app-logo img{height: 100%;width: 100%;}
