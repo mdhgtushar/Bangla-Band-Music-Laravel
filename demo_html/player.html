@@ -1,0 +1,54 @@
+﻿<audio class="player"
+       src="https://banglaband.me/audios/1657626994.mp3"
+       controls></audio>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    audio {
+        margin-bottom: 24px;
+    }
+
+    video {
+        max-width: 80%;
+    }
+</style>
+<!-- <video class="player" src="http://caiman.graodemilho.com.br/wp-content/uploads/2019/03/Video_SPLASH_v3_leve.mp4" controls></video> -->
+
+<div class="lyrics" style="display: none">
+    55 | তোমরা কেউ কি দিতে পার প্রেমিকার ভালোবাসা?
+    62 | দেবে কি কেউ জীবনে উষ্ণতার সত্য আশা?
+    70 | তোমরা কেউ কি দিতে পার প্রেমিকার ভালোবাসা?
+</div>
+
+<script>
+    const player = document.querySelector(".player");
+    const lyrics = document.querySelector(".lyrics");
+    const lines = lyrics.textContent.trim().split("\n");
+
+    lyrics.removeAttribute("style");
+    lyrics.innerText = "";
+
+    let syncData = [];
+
+    lines.map((line, index) => {
+        const [time, text] = line.trim().split("|");
+        syncData.push({ start: time.trim(), text: text.trim() });
+    });
+
+    player.addEventListener("timeupdate", () => {
+        syncData.forEach((item) => {
+            console.log(item);
+            if (player.currentTime >= item.start) lyrics.innerText = item.text;
+        });
+    });
+</script>

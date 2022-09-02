@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music system</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.18.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+   <section class="container m-auto">
+    <div class="mb-10 overflow-hidden">
+        <div class="fixed z-10 t-0 container">
+
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl">Music</a>
+            </div>
+            <div class="flex-none gap-2">
+              <div class="form-control">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="input input-bordered"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <hr />
+  
+      <div class="h-screen">
+        <div class="h-96 overflow-hidden">
+        <div class="fixed z-0 container">
+            <img class="p-2  h-96 w-full" src="https://s3.amazonaws.com/thumbnails.venngage.com/template/ab54f01f-0e5a-47f3-803c-09a250845623.png" alt="">
+        </div>
+
+        </div>
+        
+                <div class="-mt-44 px-2">
+                    <div class="relative z-10 h-44 bg-gradient-to-t from-black via-black-500 w-full"></div>
+                </div>
+            
+        <div class="relative z-10 bg-white overflow-hidden">
+            <h1 class="text-xl text-bold p-5">Popular</h1>
+        <div class="overflow-x-auto w-full p-1">
+          <table class="table w-full">
+            <!-- head -->
+            <thead>
+              <tr>
+                <th>Music</th>
+                <th>Listeners</th>
+                <th>Details</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- row 1 -->
+              <tr class="border-b-2 border-gray-100">
+                <td>
+                  <div class="flex items-center space-x-3">
+                    <div class="avatar">
+                      <div class="mask mask-squircle w-12 h-12">
+                        <img
+                          src="https://i.scdn.co/image/ab67616d00001e021bd47fe4173e62fafa028399"
+                          alt="Avatar Tailwind CSS Component"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div class="font-bold">Aaj Pasha Khelbore Sham</div>
+                      <div class="text-sm opacity-50">Alvee</div>
+                    </div>
+                  </div>
+                </td>
+                <td>2,900</td>
+                <td>
+                  <span class="badge badge-ghost badge-sm">Lirical</span>
+                  <span class="badge badge-ghost badge-sm">02:00</span>
+                </td>
+                <th>
+                  <button class="btn btn-outline gap-2 btn-sm">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                    Play
+                  </button>
+                </th>
+              </tr>
+            </tbody>
+            <!-- row 1 -->
+            <tr>
+              <td>
+                <div class="flex items-center space-x-3">
+                  <div class="avatar">
+                    <div class="mask mask-squircle w-12 h-12">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d00001e021bd47fe4173e62fafa028399"
+                        alt="Avatar Tailwind CSS Component"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="font-bold">Aaj Pasha Khelbore Sham</div>
+                    <div class="text-sm opacity-50">Alvee</div>
+                  </div>
+                </div>
+              </td>
+              <td>2,900</td>
+              <td>
+                <span class="badge badge-ghost badge-sm">Lirical</span>
+                <span class="badge badge-ghost badge-sm">02:00</span>
+              </td>
+              <th>
+                <button class="btn btn-outline gap-2 btn-sm">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                  Play
+                </button>
+              </th>
+            </tr>
+          </tbody>
+          <!-- row 1 -->
+          <tr>
+            <td>
+              <div class="flex items-center space-x-3">
+                <div class="avatar">
+                  <div class="mask mask-squircle w-12 h-12">
+                    <img
+                      src="https://i.scdn.co/image/ab67616d00001e021bd47fe4173e62fafa028399"
+                      alt="Avatar Tailwind CSS Component"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div class="font-bold">Aaj Pasha Khelbore Sham</div>
+                  <div class="text-sm opacity-50">Alvee</div>
+                </div>
+              </div>
+            </td>
+            <td>2,900</td>
+            <td>
+              <span class="badge badge-ghost badge-sm">Lirical</span>
+              <span class="badge badge-ghost badge-sm">02:00</span>
+            </td>
+            <th>
+              <button class="btn btn-outline gap-2 btn-sm">
+                <i class="fa fa-play" aria-hidden="true"></i>
+                Play
+              </button>
+            </th>
+          </tr>
+        </tbody>
+            <!-- foot -->
+            <tfoot>
+              <tr>
+                <th>Music</th>
+                <th>Listeners</th>
+                <th>Details</th>
+                <th></th>
+              </tr>
+            </tfoot>
+          </table>
+          <br />
+          <div class="flex place-content-center">
+            <div class="btn-group">
+              <button class="btn">«</button>
+              <button class="btn">Page 22</button>
+              <button class="btn">»</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+   </section>
+  </body>
+</html>
